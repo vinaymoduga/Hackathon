@@ -1,9 +1,5 @@
-
-
- 
-
 <div class="row" style="margin-top:30px;">
-<!-- 
+    <!-- 
     <div class="col-md-2 offset-md-4" style="cursor: pointer;margin-left:150px;" (click)="showRetailDiv(1)">Cash Send
 
     </div>
@@ -24,9 +20,9 @@
 
 </div>
 
- 
 
- 
+
+
 
 <div class="row" style="margin-top:30px;">
 
@@ -38,41 +34,39 @@
 
     <div class="col-md-1">
 
- 
+
 
     </div>
 
- 
+
 
 </div>
 
- 
+
 
 <div *ngIf="showRetail" style="margin-top:30px;margin-left: 220px;">
 
- 
+
 
     <div class="row">
 
-        <div class="col-md-2 offset-md-2">
+        <div class="col-md-3 offset-md-2">
 
             <input type="radio" value="Transfer" name="sendType" [(ngModel)]="selectTransfer"
-
                 (change)="transferTypeChange(0)"> Transfer To Account
 
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
 
             <input type="radio" value="Send" name="sendType" [(ngModel)]="selectTransfer"
-
                 (change)="transferTypeChange(1)"> Transfer To CellNumber
 
         </div>
 
     </div>
 
- 
+
 
     <div *ngIf="showTransferDiv">
 
@@ -89,7 +83,6 @@
         <div class="row" style="margin-top: 15px;margin-left: 25px;">
 
             <div class="col-md-4 offset-md-1"><input type="radio" name="transferType" value="cheque"> <span
-
                     style="margin-left: 15px;">Cheque Account </span><span style="margin-left:70px">1723408234 </span>
 
             </div>
@@ -98,8 +91,7 @@
 
         <div class="row" style="margin-top: 15px;;margin-left: 25px;">
 
-            <div class="col-md-4 offset-md-1"><input type="radio" name="transferType" value="credit"><span
-
+            <div class="col-md-5 offset-md-1"><input type="radio" name="transferType" value="credit"><span
                     style="margin-left: 15px;">Credit Card </span><span style="margin-left:105px">8787452309813456
 
                 </span></div>
@@ -109,7 +101,6 @@
         <div class="row" style="margin-top: 15px;;margin-left: 25px;">
 
             <div class="col-md-4 offset-md-1"><input type="radio" name="transferType" value="investment"> <span
-
                     style="margin-left: 15px;">Savings </span><span style="margin-left:128px"> 9765547687</span> </div>
 
         </div>
@@ -118,29 +109,26 @@
 
             <div class="col-md-2 offset-md-1 ">Amount</div>
 
-            <div class="col-md-4"><input type="text" [(ngModel)]="transferAmount" class="form-control"
-
-                    placeholder="Amount"> </div>
+            <div class="col-md-4" style="margin-left:35px;"><input type="text" [(ngModel)]="transferAmount"
+                    class="form-control" placeholder="Amount"> </div>
 
         </div>
 
-        <div class="row" style="margin-top: 35px;;margin-left: 25px;">
+        <div class="row" style="margin-top: 35px;margin-left: 25px;">
 
             <div class="col-md-2 offset-md-3"><input class="form-control btn btn-danger" type="button"
-
                     (click)="cancelEvent()" value="Cancel">
 
             </div>
 
             <div class="col-md-2"><input class="form-control btn btn-primary" type="button"
-
                     (click)="transferAmountEvent()" value="Transfer"> </div>
 
         </div>
 
     </div>
 
- 
+
 
     <div class="row" *ngIf="showValidataionError" style="margin-top:20px;">
 
@@ -162,7 +150,7 @@
 
     </div>
 
- 
+
 
     <div *ngIf="showCashDiv">
 
@@ -189,7 +177,6 @@
             <div class="col-md-2 offset-md-1">Amount</div>
 
             <div class="col-md-4"><input type="text" [(ngModel)]="transferAmount" class="form-control"
-
                     placeholder="Amount"> </div>
 
         </div>
@@ -205,13 +192,11 @@
         <div class="row" style="margin-top: 35px;margin-left: 25px;">
 
             <div class="col-md-2 offset-md-3"><input class="form-control btn btn-danger" type="button"
-
                     (click)="cancelEvent()" value="Cancel">
 
             </div>
 
             <div class="col-md-2"><input class="form-control btn btn-primary" (click)="sendToNumber()" type="button"
-
                     value="Send"> </div>
 
         </div>
@@ -236,19 +221,19 @@
 
         </div>
 
- 
+
 
     </div>
 
- 
+
 
 </div>
 
- 
+
 
 <div *ngIf="showCash" style="margin-top:30px;margin-left: 220px;">
 
- 
+
 
     <div class="row" style="margin-top: 15px;">
 
@@ -276,7 +261,7 @@
 
     </div>
 
- 
+
 
     <div class="row" style="margin-top: 35px;">
 
