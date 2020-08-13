@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
-
 import { Router } from '@angular/router';
 
 import { ThrowStmt } from '@angular/compiler';
@@ -40,7 +38,7 @@ export class cashSendComponent {
 
 
 
-  transferAmount: number;
+  public transferAmount: number;
 
   selectTransfer: string = "";
 
@@ -49,8 +47,6 @@ export class cashSendComponent {
   constructor(private _router: Router) {
 
     this.selectTransfer = "";
-
-    this.transferAmount = this.amount;
 
   }
 
@@ -152,7 +148,6 @@ export class cashSendComponent {
 
     this.showSucessSendToNumber = false;
 
-    this.transferAmount = this.amount;
 
   }
 
@@ -168,11 +163,12 @@ export class cashSendComponent {
 
     } else {
 
-      this.amount = this.transferAmount = this.amount - this.transferAmount;
+      // this.amount = this.transferAmount = this.amount - this.transferAmount;
 
       this.showErrorSendToNumber = false;
 
       this.showSucessSendToNumber = true;
+       this.transferAmount = null;
 
     }
 
@@ -194,11 +190,12 @@ export class cashSendComponent {
 
     } else {
 
-      this.amount = this.transferAmount = this.amount - this.transferAmount;
+      // this.amount = this.transferAmount = this.amount - this.transferAmount;
 
       this.showValidataionError = false;
 
       this.showSucess = true;
+      this.transferAmount = null;
 
     }
 
